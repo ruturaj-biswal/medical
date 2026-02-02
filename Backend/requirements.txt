@@ -1,6 +1,0 @@
-Flask
-Flask-Mail
-Flask-Cors
-mysql-connector-python
-python-dotenv
-gunicorn
