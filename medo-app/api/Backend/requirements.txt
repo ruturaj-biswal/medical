@@ -1,7 +1,0 @@
-Flask
-Flask-Mail
-Flask-Cors
-gunicorn
-vercel
-mysql-connector-python
-python-dotenv
