@@ -1,0 +1,280 @@
+/* ==================== PAGE LAYOUT ==================== */
+.dhr-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #007bff 0%, #00b4ff 40%, #cce7ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  padding: 40px 10px;
+}
+
+/* Glass Container */
+.dhr-container {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  color: #fff;
+}
+
+/* ==================== AUTH SECTION ==================== */
+.dhr-auth {
+  text-align: center;
+}
+
+.dhr-auth h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.dhr-auth .muted {
+  color: #e3f2fd;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* Tabs */
+.auth-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.tab {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid transparent;
+  color: #e3f2fd;
+  border-radius: 30px;
+  padding: 10px 22px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.tab.active {
+  background: linear-gradient(90deg, #ffffff, #cce7ff);
+  color: #004aad;
+  border-color: #e3f2fd;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* ==================== INPUT FORMS ==================== */
+.dhr-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.dhr-form input,
+.dhr-form select,
+.dhr-form textarea {
+  width: 330px;
+  padding: 12px 15px;
+  border-radius: 14px;
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.dhr-form input::placeholder {
+  color: #e0f3ff;
+}
+
+.dhr-form input:focus,
+.dhr-form select:focus,
+.dhr-form textarea:focus {
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* ==================== BUTTONS ==================== */
+.primary {
+  width: 330px;
+  padding: 12px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #007bff, #004aad);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+}
+
+.note {
+  margin-top: 10px;
+  color: #e3f2fd;
+  font-size: 0.85rem;
+}
+
+/* ==================== LOGGED-IN DASHBOARD ==================== */
+.dhr-app {
+  color: #0d1b2a;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.dhr-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dhr-header h2 {
+  color: #003366;
+  margin-bottom: 6px;
+}
+
+.dhr-actions button {
+  margin-left: 8px;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.secondary {
+  background: #eef6ff;
+  color: #004aad;
+}
+
+.danger {
+  background: #ffebee;
+  color: #b00020;
+}
+
+/* ==================== RECORD FORM ==================== */
+.dhr-record-form input,
+.dhr-record-form select,
+.dhr-record-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #d0e4ff;
+  margin-bottom: 10px;
+}
+
+.dhr-record-form button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #007bff, #004aad);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.dhr-record-form button:hover {
+  transform: scale(1.03);
+}
+
+/* ==================== RECORD LIST ==================== */
+.record-item {
+  background: #f9fbff;
+  border: 1px solid #e1ecff;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0, 90, 255, 0.08);
+  transition: 0.3s;
+}
+
+.record-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 90, 255, 0.1);
+}
+
+.record-name {
+  color: #003366;
+  font-weight: 700;
+}
+
+.record-age {
+  color: #6b86a6;
+  font-size: 0.9rem;
+  margin-left: 6px;
+}
+
+.record-meta {
+  color: #6b86a6;
+  font-size: 0.85rem;
+}
+
+.record-notes {
+  margin-top: 8px;
+  color: #405e7f;
+}
+
+/* ==================== MESSAGES ==================== */
+.dhr-message {
+  background: #fff8e1;
+  color: #6d5700;
+  border: 1px solid #ffe082;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* ==================== OFFLINE ACCESS SECTION ==================== */
+.offline-access {
+  background: linear-gradient(180deg, #f0f9ff, #e6f3ff);
+  border: 1px solid #cce0ff;
+  padding: 20px;
+  border-radius: 14px;
+  margin-top: 25px;
+  color: #004aad;
+}
+
+.offline-access h3 {
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.offline-access ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.offline-access li {
+  margin-bottom: 6px;
+  color: #0050b3;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+  .dhr-form input,
+  .dhr-form .primary {
+    width: 100%;
+  }
+
+  .dhr-container {
+    padding: 24px;
+  }
+}

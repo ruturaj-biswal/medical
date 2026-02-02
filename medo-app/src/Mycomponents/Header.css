@@ -1,0 +1,70 @@
+/* 🌐 Navbar */
+.navbar {
+  background: linear-gradient(90deg, #003b80, #005fcc, #0088ff);
+  padding: 1rem 0;
+  transition: all 0.4s ease;
+  box-shadow: 0 3px 15px rgba(0, 47, 108, 0.4);
+}
+
+.navbar-scrolled {
+  background: linear-gradient(90deg, #00285c, #00439c);
+  box-shadow: 0 4px 25px rgba(0, 47, 108, 0.5);
+}
+
+/* 💙 BRAND LOGO + TEXT */
+.brand-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0px 0px 6px rgba(0, 255, 255, 0.7));
+}
+
+.brand-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ffffff, #00e0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+/* 🔗 Links */
+.nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  padding: 0.6rem 1.2rem !important;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: #00eaff;
+  transition: 0.3s;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 60%;
+}
+
+.nav-link:hover {
+  color: #00eaff !important;
+}
+
+/* 📱 Responsive */
+@media (max-width: 991px) {
+  .brand-text {
+    font-size: 1.5rem;
+  }
+}

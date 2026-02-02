@@ -1,0 +1,118 @@
+.contact-container {
+  background-color: #ffffff;
+  color: #003366;
+  font-family: "Poppins", sans-serif;
+  padding: 40px 18px;
+  text-align: center;
+  max-width: 820px;
+  margin: 24px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(1, 33, 105, 0.06);
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  color: #004aad;
+}
+
+.contact-lead {
+  color: #4a6fa5;
+  max-width: 700px;
+  margin: 8px auto 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.contact-form .row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #dbeeff;
+  background: #fbfdff;
+  font-size: 0.98rem;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form .row input {
+  flex: 1 1 48%;
+  min-width: 200px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.send-btn {
+  background: linear-gradient(90deg, #004aad, #0077e6);
+  color: #fff;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 28px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.send-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.send-btn:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 119, 230, 0.18);
+}
+
+/* status messages */
+.status {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.status-info {
+  background: #fff8e1;
+  color: #8a6d00;
+  border: 1px solid #ffe7a8;
+}
+
+.status-success {
+  background: #e6ffef;
+  color: #0b6f3b;
+  border: 1px solid #bff0cf;
+}
+
+.status-error {
+  background: #fff3f3;
+  color: #8b1a1a;
+  border: 1px solid #f5c6c6;
+}
+
+/* responsive */
+@media (max-width: 640px) {
+  .contact-form .row input {
+    flex: 1 1 100%;
+  }
+}

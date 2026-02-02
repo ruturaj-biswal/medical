@@ -1,0 +1,305 @@
+/* ===========================
+   Home - Glass UI (keeps your colors & hover)
+   =========================== */
+
+   .home-container {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    background-color: #f7faff;
+    overflow-x: hidden;
+  }
+  
+  /* Reusable glass panel */
+  .glass {
+    background: rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 18px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 30px rgba(2, 62, 138, 0.08);
+  }
+  
+  /* HERO */
+  .hero-section {
+    background: linear-gradient(135deg, #002f6c, #004c99, #007bff);
+    color: white;
+    padding: 60px 20px;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+  }
+  
+  .hero-inner {
+    display: flex;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hero-left {
+    flex: 1.1;
+    padding: 8px 12px;
+  }
+  
+  .hero-right {
+    flex: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Title - keep color combo */
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.05;
+  }
+  .hero-title span {
+    color: #ffdd57;
+  }
+  
+  .hero-subtitle {
+    color: #cce0ff;
+    margin-top: 10px;
+    font-size: 1.05rem;
+  }
+  
+  /* Buttons: preserve colors and hover style from your CSS */
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+    margin-right: 12px;
+    color: #002f6c;
+  }
+  
+  .primary-lg {
+    background: #ffdd57;
+    color: #002f6c;
+    border: none;
+    padding: 12px 22px;
+  }
+  .secondary-lg {
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.18);
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .primary-lg:hover {
+    background: white;
+    color: #004aad;
+    transform: translateY(-3px);
+  }
+  .secondary-lg:hover {
+    background: rgba(255,255,255,0.12);
+    transform: translateY(-3px);
+  }
+  
+  /* Quick features list */
+  .quick-features {
+    margin-top: 18px;
+    color: #e8f4ff;
+    font-weight: 600;
+  }
+  .quick-features ul {
+    display: inline-block;
+    margin: 8px 0 0;
+    padding-left: 18px;
+  }
+  .quick-features li {
+    display: inline;
+    margin-right: 14px;
+    font-size: 0.95rem;
+  }
+  
+  /* App mockup on right */
+  .app-mockup { width: 240px; }
+  .mock-screen {
+    width: 220px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(180deg,#fff,#f4f9ff);
+    color: #003366;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  }
+  .mock-header {
+    background: linear-gradient(90deg,#004aad,#002f6c);
+    color: #fff;
+    padding: 10px;
+    font-weight: 700;
+  }
+  .mock-body { padding: 12px; }
+  .mock-card {
+    background: linear-gradient(90deg,#e6f3ff,#fff);
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: left;
+    color: #003366;
+  }
+  
+  /* FEATURES GRID */
+  .features-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #003366;
+  }
+  .section-title span { color: #00aaff; }
+  
+  .section-sub {
+    color: #4a6fa5;
+    margin-bottom: 24px;
+  }
+  
+  /* grid - keep hover & colors */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Each card keeps the same hover style you asked not to change */
+  .feature-card {
+    background: white;
+    border-radius: 14px;
+    padding: 18px;
+    text-align: left;
+    color: #003366;
+    border: 1px solid #dbe9ff;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .feature-card:hover {
+    background: linear-gradient(135deg, #007bff, #00b8ff);
+    color: white;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,123,255,0.25);
+  }
+  
+  .feature-emoji {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+  }
+  
+  .feature-card h4 { margin: 0; font-size: 1.08rem; font-weight: 700; }
+  .feature-card p { margin: 0; color: inherit; opacity: 0.9; }
+  
+  /* actions row inside card */
+  .feature-actions {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .badge {
+    background: rgba(0, 123, 255, 0.08);
+    color: #004aad;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+  .explore-btn {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #007bff, #00aaff);
+    color: white;
+    font-weight: 700;
+  }
+  .feature-card:hover .explore-btn {
+    background: rgba(255,255,255,0.12);
+    color: #002f6c;
+  }
+  
+  /* CTA */
+  .cta-section {
+    padding: 40px 20px 80px;
+    text-align: center;
+  }
+  .cta-glass {
+    display: inline-block;
+    padding: 28px;
+    border-radius: 16px;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 900px) {
+    .hero-inner { flex-direction: column; gap: 18px; }
+    .hero-right { order: -1; }
+    .hero-title { font-size: 2rem; }
+  }
+  
+  /* MORE SERVICES SECTION */
+.more-services-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.more-card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 18px;
+}
+
+.more-card h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #003366;
+}
+
+.more-card p {
+  color: #4a6fa5;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+/* ===========================
+   Explore More Services Button
+   =========================== */
+
+   .more-services-section {
+    text-align: center;
+    margin: 40px 0 20px;
+  }
+  
+  .more-services-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 26px;
+    background: linear-gradient(135deg, #007bff, #00aaff);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  
+  .more-services-btn:hover {
+    background: linear-gradient(135deg, #0066cc, #0088ff);
+    transform: translateY(-3px);
+  }
+  
+  .arrow {
+    font-size: 1.3rem;
+    font-weight: 900;
+  }
+  

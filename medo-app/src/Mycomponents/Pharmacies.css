@@ -1,0 +1,81 @@
+.pharmacy-page {
+  padding: 2rem 1rem;
+  background: linear-gradient(180deg, #e6f2ff 0%, #f0f9ff 100%);
+  min-height: 100vh;
+}
+
+.pharmacy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.pharmacy-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #004aad;
+}
+
+.pharmacy-subtitle {
+  font-size: 1.1rem;
+  color: #4a6fa5;
+  margin-top: 0.3rem;
+}
+
+.find-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.find-btn:hover {
+  background: #004aad;
+  transform: scale(1.05);
+}
+
+.pharmacy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.pharmacy-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 74, 173, 0.15);
+  transition: 0.3s;
+}
+
+.pharmacy-card:hover {
+  transform: translateY(-5px);
+}
+
+.order-btn {
+  background: #004aad;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background: #002b5b;
+}

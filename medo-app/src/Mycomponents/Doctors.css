@@ -1,0 +1,79 @@
+.doctors-page {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: linear-gradient(180deg, #e6f0ff 0%, #f5faff 100%);
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .doctors-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #004aad;
+    margin-bottom: 0.5rem;
+  }
+  
+  .doctors-subtitle {
+    color: #4a6fa5;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .doctor-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 74, 173, 0.15);
+    padding: 1.8rem;
+    transition: all 0.3s ease;
+  }
+  
+  .doctor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 74, 173, 0.25);
+  }
+  
+  .doctor-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .specialty {
+    font-weight: 600;
+    color: #004aad;
+  }
+  
+  .experience,
+  .location {
+    color: #6b86a6;
+    font-size: 0.9rem;
+    margin-top: 4px;
+  }
+  
+  .book-btn {
+    margin-top: 1rem;
+    padding: 10px 18px;
+    background: linear-gradient(90deg, #007bff, #004aad);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .book-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+  }
+  

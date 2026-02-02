@@ -1,0 +1,74 @@
+.monitoring-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #dff3ff, #a8d8ff);
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .monitoring-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 74, 173, 0.2);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .heart-icon {
+    font-size: 60px;
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .start-btn {
+    background: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .start-btn:hover {
+    background: #005fcc;
+    transform: scale(1.05);
+  }
+  
+  .loading-section {
+    margin-top: 20px;
+  }
+  
+  .pulse-loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid red;
+    border-radius: 50%;
+    animation: pulse 0.8s infinite ease-in-out;
+    margin: 0 auto 10px;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.4); opacity: 0.5; }
+  }
+  
+  .result-box {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.35);
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .rate-value {
+    font-size: 2.5rem;
+    color: #ff0033;
+    margin: 15px 0;
+  }
+  

@@ -1,0 +1,60 @@
+.pharmacy-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pharmacy-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cce0ff;
+  width: 220px;
+  font-size: 0.95rem;
+}
+
+.primary {
+  background: #004aad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary:hover {
+  background: #003580;
+}
+
+.pharmacy-message {
+  text-align: center;
+  color: #004aad;
+  font-weight: 600;
+}
+
+.pharmacy-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.edit-btn {
+  background: #e7f0ff;
+  color: #004aad;
+}
+
+.delete-btn {
+  background: #ffebee;
+  color: #c62828;
+}
